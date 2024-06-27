@@ -1,8 +1,8 @@
 const form = document.getElementById('horoscope-form');
-const result = document.getElementById('result'); // Not used here
+const result = document.getElementById('result');
 
 form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault();
   
     const name = document.getElementById('name').value;
     const birthMonth = document.getElementById('birth-month').value;
@@ -47,5 +47,5 @@ form.addEventListener('submit', function(event) {
   }
 
   const message = `Hi ${name}, your horoscope sign is ${sign}`;
-  window.alert(message); // Use alert() for a separate window prompt
+  window.alert(message);
 });
